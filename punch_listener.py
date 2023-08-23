@@ -49,16 +49,16 @@ def index():
     if name == "iPhone8_m":
         current_time = datetime.now()
         msg = f"【punch listener】 M Punch Succeeded: {current_time}"
-        wechat_app.send_text(message=msg, touser="elias|ZhengHongHao")
+        wechat_app.send_text(message=msg, touser="wechat_nickname_in_enterprise_1|wechat_nickname_in_enterprise_2")
         return "ok"
     elif name == "iPhone8_e":
         current_time = datetime.now()
         msg = f"【punch listener】 E Punch Succeeded: {current_time}"
-        wechat_app.send_text(message=msg, touser="elias|ZhengHongHao")
+        wechat_app.send_text(message=msg, touser="wechat_nickname_in_enterprise_1|wechat_nickname_in_enterprise_2")
         return "ok"
     else:
         msg = f"【punch listener】注意非法请求"
-        wechat_app.send_text(message=msg, touser="elias|ZhengHongHao")
+        wechat_app.send_text(message=msg, touser="wechat_nickname_in_enterprise_1|wechat_nickname_in_enterprise_2")
         return "Asshole"
 
 
