@@ -76,6 +76,6 @@ if __name__ in "__main__":
     while True:
         soup = watcher(url)
         msg = watch_tag(page=soup, tag="div", attrs={"class": "links"}, rounds=rounds)
-        app.send_text(message=msg, touser="elias|ZhengHongHao")
+        app.send_text(message=msg, touser="wechat_nickname_in_enterprise_1|wechat_nickname_in_enterprise_2")
         rounds += 1
         sleep(900)
